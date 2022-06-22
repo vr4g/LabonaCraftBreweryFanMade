@@ -20,14 +20,8 @@ class AboutUsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-
-        /* val homeViewModel =
-             ViewModelProvider(this).get(HomeViewModel::class.java)*/
-
         _binding = FragmentAboutUsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
 
         val textView: TextView = binding.textView
             textView.text = "Craft je opet IN!"

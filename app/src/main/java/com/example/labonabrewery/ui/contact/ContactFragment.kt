@@ -30,6 +30,7 @@ class ContactFragment : Fragment() {
         _binding = FragmentContactBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        //val variable bind with widgets
         val addressTitle: TextView = binding.addressTitle
         val addressValue: TextView = binding.addressValue
         val contactNumberTitle: TextView = binding.numberTitle
@@ -39,6 +40,7 @@ class ContactFragment : Fragment() {
         val facebook: ImageView = binding.facebook
         val instagram: ImageView = binding.instagram
 
+        //set values
         addressTitle.text = "ADRESA"
         addressValue.text = "Štrmac 1, 52220 Labin - HR"
         contactNumberTitle.text = "TELEFON"
@@ -46,34 +48,37 @@ class ContactFragment : Fragment() {
         emailTitle.text = "EMAIL"
         emailValue.text = "info@labona.hr"
 
+        //give clickable tekst UNDERLINE to give 'clickable' look
         addressValue.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG)
         contactNumberValue.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG)
         emailValue.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG)
 
+        //code to open Maps on click and show location
         val address = "Labona craft brewery Labin"
         val mapUri = Uri.parse("geo:0,0?q=" + Uri.encode(address))
         val mapIntent = Intent(Intent.ACTION_VIEW, mapUri)
         mapIntent.setPackage("com.google.android.apps.maps")
-
         addressValue.setOnClickListener {
             startActivity(mapIntent)
         }
 
-
+        //code to open dial menu on mobile to ready for contact via call
         val intent = Intent(Intent.ACTION_DIAL)
         intent.data = Uri.parse("tel:+385994965785")
-
         contactNumberValue.setOnClickListener {
             startActivity(intent)
         }
 
+        //code to open email to contact via email
         val intentEmail = Intent(Intent.ACTION_MAIN)
         intentEmail.addCategory(Intent.CATEGORY_APP_EMAIL)
-
         emailValue.setOnClickListener {
             startActivity(intentEmail)
         }
 
+        //code to open facebook on click to show given Page
+        //if there is facebook app installed, open in app
+        //if there is no facebook app, open url in browser
         facebook.setOnClickListener {
             var uri = Uri.parse("fb://page/107622175137886")
             val face = Intent(Intent.ACTION_VIEW, uri)
@@ -92,14 +97,15 @@ class ContactFragment : Fragment() {
         }
 
 
-
+        //code to open instagram on click to show given Page
+        //if there is instagram app installed, open in app
+        //if there is no instagram app, open url in browser
         instagram.setOnClickListener {
             val uri = Uri.parse("http://instagram.com/_u/labonacraftbrewery")
-            val likeIng = Intent(Intent.ACTION_VIEW, uri)
-            likeIng.setPackage("com.instagram.android")
-
+            val instagram = Intent(Intent.ACTION_VIEW, uri)
+            instagram.setPackage("com.instagram.android")
             try {
-                startActivity(likeIng)
+                startActivity(instagram)
             } catch (e: ActivityNotFoundException) {
                 startActivity(
                     Intent(
@@ -109,9 +115,6 @@ class ContactFragment : Fragment() {
                 )
             }
         }
-
-
-
         return root
     }
 

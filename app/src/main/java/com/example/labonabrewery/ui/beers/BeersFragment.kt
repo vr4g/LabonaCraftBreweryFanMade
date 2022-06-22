@@ -13,7 +13,8 @@ import com.example.labonabrewery.R
 import com.example.labonabrewery.databinding.FragmentBeersBinding
 
 
-const val porter = "Tamno kestenjaste boje sa primamljivom smeđom pjenom. Prevladavaju note tamne karamele, likoricije i dozrelih crvenih jabuka. Srednjeg tijela i srednje jake gorčine u ovom pivu do izražaja dolaze specijalni prženi tipovi slada koji se koriste u proizvodnji ovog piva. Kao takvo izvrsno paše uz goveđa ili variva sa divljači, meke i sireve sa plemenitom plijesni, te čokoladne deserte i sladoled"
+//const values for description text for given beer
+    const val porter = "Tamno kestenjaste boje sa primamljivom smeđom pjenom. Prevladavaju note tamne karamele, likoricije i dozrelih crvenih jabuka. Srednjeg tijela i srednje jake gorčine u ovom pivu do izražaja dolaze specijalni prženi tipovi slada koji se koriste u proizvodnji ovog piva. Kao takvo izvrsno paše uz goveđa ili variva sa divljači, meke i sireve sa plemenitom plijesni, te čokoladne deserte i sladoled"
 
     const val apa = "Jako pivo, zlatno jantarne boje i bijele postojane pjene. Punog tijela i smjele gorčine ovo je pivo prava eksplozija okusa. Note tropskog voća, kojim dominira grapefruit, borovina, muškatni orašćić i cvjetne arome savršeno će upotpuniti vrlo pikantna jela, prženu hranu, ribu, burgere i razne čokoladne slastice."
 
@@ -39,6 +40,7 @@ class BeersFragment : Fragment() {
         val root: View = binding.root
 
 
+        //val variable bind with widgets
         val beerTitle : TextView = binding.beerTitle
         val beerDescription : TextView = binding.beerDescription
         val buttonNext : Button = binding.buttonNext
@@ -49,13 +51,14 @@ class BeersFragment : Fragment() {
         buttonNext.text = ">"
         buttonPrevious.text = "<"
 
-
+        //first beer set
         beerTitle.text = "PORTER"
         beerTitle.setTextColor(Color.WHITE)
         beerDescription.setTextColor(Color.WHITE)
         beerDescription.text = porter
 
 
+        //function to get Beer values
         fun getBeer() {
         if(imageIndex == 0){
             beerTitle.text = "PORTER"
@@ -65,7 +68,6 @@ class BeersFragment : Fragment() {
             view?.setBackgroundColor(
                 Color.rgb(88,40,41)
             )
-
         }else if(imageIndex == 1){
             beerTitle.text = "AMERICAN PALE ALE"
             beerTitle.setTextColor(Color.BLACK)
@@ -93,8 +95,9 @@ class BeersFragment : Fragment() {
         }
         }
 
+        //next beer button
         buttonNext.setOnClickListener {
-            if(imageIndex >= 3){
+            if(imageIndex >= 3){ //when showing last beer, set value to start again
                 imageIndex = 0
             }else{
                 imageIndex++
@@ -105,6 +108,7 @@ class BeersFragment : Fragment() {
             viewFlipper.showNext()
         }
 
+        //previous beer button
         buttonPrevious.setOnClickListener {
             if(imageIndex <= 0){
                 imageIndex = 3
@@ -116,7 +120,6 @@ class BeersFragment : Fragment() {
             viewFlipper.setOutAnimation(activity, R.anim.prev_out)
             viewFlipper.showPrevious()
         }
-
 
         return root
     }
