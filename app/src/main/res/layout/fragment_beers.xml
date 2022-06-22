@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentBeers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#582829"
+    tools:context=".ui.beers.BeersFragment">
+
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="#40FFFFFF"
+        android:backgroundTint="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFlipper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="#40000000"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFlipper"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/beerTitle"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="26sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFlipper"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/beerDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/beerTitle"
+        app:layout_constraintTop_toBottomOf="@+id/beerTitle"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="#FFFFFF"
+        android:rotation="-9.5"
+        android:translationY="-69dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFlipper"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNext"
+        app:layout_constraintHeight_percent="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1.5"
+        tools:ignore="MissingConstraints" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inAnimation="@anim/prev_in"
+        android:outAnimation="@anim/prev_out"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNext"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="@+id/buttonPrevious"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/porter" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/apa" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ipa" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/blonde" />
+    </ViewFlipper>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
