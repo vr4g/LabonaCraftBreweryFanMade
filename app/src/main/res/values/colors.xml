@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="porterBackground">#582829</color>
+    <color name="apaBackground">#CCB737</color>
+    <color name="ipaBackground">#ECB82F</color>
+    <color name="blondeBackground">#EC9A4F</color>
 </resources>

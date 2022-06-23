@@ -11,25 +11,28 @@
 
     <Button
         android:id="@+id/buttonPrevious"
-        android:layout_width="40dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#40FFFFFF"
         android:backgroundTint="#00000000"
         app:layout_constraintBottom_toBottomOf="@+id/viewFlipper"
+        app:layout_constraintHeight_percent="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintWidth_percent="0.15" />
 
     <Button
         android:id="@+id/buttonNext"
-        android:layout_width="40dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#40000000"
+        android:background="#000000"
         android:backgroundTint="#00FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/viewFlipper"
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15" />
 
     <TextView
         android:id="@+id/beerTitle"
@@ -48,12 +51,14 @@
         android:id="@+id/beerDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
         android:text="TextView"
         app:autoSizeTextType="uniform"
-        app:layout_constraintStart_toStartOf="@+id/beerTitle"
-        app:layout_constraintTop_toBottomOf="@+id/beerTitle"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beerTitle" />
 
 
     <View
@@ -63,10 +68,21 @@
 
         android:background="#FFFFFF"
         android:rotation="-9.5"
-        android:translationY="-69dp"
-        app:layout_constraintBottom_toBottomOf="@+id/viewFlipper"
         app:layout_constraintEnd_toEndOf="@+id/buttonNext"
-        app:layout_constraintHeight_percent="0.385"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1.5"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNext"
+        app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="1.5"

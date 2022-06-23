@@ -49,9 +49,9 @@ class ContactFragment : Fragment() {
         emailValue.text = "info@labona.hr"
 
         //give clickable tekst UNDERLINE to give 'clickable' look
-        addressValue.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG)
-        contactNumberValue.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG)
-        emailValue.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG)
+        addressValue.paintFlags = Paint.UNDERLINE_TEXT_FLAG
+        contactNumberValue.paintFlags = Paint.UNDERLINE_TEXT_FLAG
+        emailValue.paintFlags = Paint.UNDERLINE_TEXT_FLAG
 
         //code to open Maps on click and show location
         val address = "Labona craft brewery Labin"
@@ -84,7 +84,7 @@ class ContactFragment : Fragment() {
             val face = Intent(Intent.ACTION_VIEW, uri)
             face.setPackage("com.facebook.katana")
             try {
-                    startActivity(face)
+                startActivity(face)
             } catch (e: ActivityNotFoundException) {
                 startActivity(
                     Intent(
@@ -93,9 +93,7 @@ class ContactFragment : Fragment() {
                     )
                 )
             }
-
         }
-
 
         //code to open instagram on click to show given Page
         //if there is instagram app installed, open in app

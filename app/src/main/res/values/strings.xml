@@ -3,4 +3,18 @@
     <string name="title_about_us">O nama</string>
     <string name="title_beers">Pive</string>
     <string name="title_contact">Kontakt</string>
+    <string name="porterTitle">PORTER</string>
+    <string name="ipaTitle">INDIA PALE ALE</string>
+    <string name="apaTitle">AMERICAN PALE ALE</string>
+    <string name="blondeTitle">BLONDE ALE</string>
+
+    <string name="porterDescription">Tamno kestenjaste boje sa primamljivom smeđom pjenom. Prevladavaju note tamne karamele, likoricije i dozrelih crvenih jabuka. Srednjeg tijela i srednje jake gorčine u ovom pivu do izražaja dolaze specijalni prženi tipovi slada koji se koriste u proizvodnji ovog piva. Kao takvo izvrsno paše uz goveđa ili variva sa divljači, meke i sireve sa plemenitom plijesni, te čokoladne deserte i sladoled.</string>
+
+    <string name="ipaDescription">Pivo skladnog tijela i ugodne gorčine, slamnato žute boje. Krasi ga čvrsta bijela pjena koja traje. Glavni aduti ovog piva su aroma cvjetnog meda uz lagane note ananasa i tropskog voća koje osvježavaju. Savršeno odgovara uz burgere, steakove, začinjene salate, polutvrde sireve i voćne deserte.</string>
+
+    <string name="apaDescription">Jako pivo, zlatno jantarne boje i bijele postojane pjene. Punog tijela i smjele gorčine ovo je pivo prava eksplozija okusa. Note tropskog voća, kojim dominira grapefruit, borovina, muškatni orašćić i cvjetne arome savršeno će upotpuniti vrlo pikantna jela, prženu hranu, ribu, burgere i razne čokoladne slastice.</string>
+
+    <string name="blondeDescription">Srednjeg tijela i lagane gorčine dobar je balans između sladnosti i gorčine. Zlatno je žute boje sa tankom bijelom pjenom koja traje. Krušne note sa aromama bagremovog meda i marcipana dodatno će začiniti laganija jela kao što su razne tjestenine, lagane salate, jela od piletine i svježi sir.</string>
+
+
 </resources>

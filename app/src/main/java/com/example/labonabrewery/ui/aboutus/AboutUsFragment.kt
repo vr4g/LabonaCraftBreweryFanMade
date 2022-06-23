@@ -24,13 +24,14 @@ class AboutUsFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.textView
-            textView.text = "Craft je opet IN!"
+        textView.text = "Craft je opet IN!"
 
         val textView2: TextView = binding.textView2
-            textView2.text = "LABONA Premium Craft pivo za prave pivoljupce"
+        textView2.text = "LABONA Premium Craft pivo za prave pivoljupce"
 
         val textView3: TextView = binding.textView3
-            textView3.text = "Labona je nova pivovara iz Labina koja je osnovana 2021.g.od strane mladih entuzijasta koji su godinama stvarali pivo kod kuće samo za vlastite potrebe. Svoje iskustvo i ono što su jednom bili kućni uradci odlučili smo podijeliti sa širom publikom, te prenijeti svoje promišljanje i filozofiju stvaranja piva i guštanja u pivu.\n" +
+        textView3.text =
+            "Labona je nova pivovara iz Labina koja je osnovana 2021.g.od strane mladih entuzijasta koji su godinama stvarali pivo kod kuće samo za vlastite potrebe. Svoje iskustvo i ono što su jednom bili kućni uradci odlučili smo podijeliti sa širom publikom, te prenijeti svoje promišljanje i filozofiju stvaranja piva i guštanja u pivu.\n" +
                     System.getProperty("line.separator") +
                     "Svi naši proizvodi su potpuno prirodni bez ikakvih dodataka, surogata, aroma, bojila ili konzervansa, nefiltrirani su i nepasterizirani što jamči kvalitetu i pivo punog i specifičnog okusa koje zove na još jednu čašu.\n" +
                     System.getProperty("line.separator") +

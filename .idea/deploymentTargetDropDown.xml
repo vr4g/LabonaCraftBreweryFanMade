@@ -6,12 +6,12 @@
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="SERIAL_NUMBER" />
-            <value value="ce021712d296d84d0c" />
+            <type value="VIRTUAL_DEVICE_PATH" />
+            <value value="C:\Users\vr4g\.android\avd\5.4_FWVGA_API_27.avd" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-06-21T20:32:53.085651800Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-06-22T20:05:06.973132900Z" />
   </component>
 </project>

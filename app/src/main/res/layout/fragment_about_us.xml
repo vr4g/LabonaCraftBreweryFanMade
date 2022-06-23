@@ -41,7 +41,6 @@
         android:text="Labona je nova pivovara iz Labina koja je osnovana 2021.g.od strane mladih entuzijasta koji su godinama stvarali pivo kod kuće samo za vlastite potrebe. Svoje iskustvo i ono što su jednom bili kućni uradci odlučili smo podijeliti sa širom publikom, te prenijeti svoje promišljanje i filozofiju stvaranja piva i guštanja u pivu.  Svi naši proizvodi su potpuno prirodni bez ikakvih dodataka, surogata, aroma, bojila ili konzervansa, nefiltrirani su i nepasterizirani što jamči kvalitetu i pivo punog i specifičnog okusa koje zove na još jednu čašu.  Važno je naglasiti da pivo koje stvaramo, radimo i dalje kao da je za nas osobno i želimo da zajedno sa nama uživate u novom pivskom doživljaju koji pružaju naša piva."
         android:textColor="#000000"
         android:textSize="16sp"
-        android:textStyle="italic"
         android:typeface="monospace"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
