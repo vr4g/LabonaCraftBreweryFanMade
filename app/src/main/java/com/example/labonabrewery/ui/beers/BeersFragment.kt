@@ -37,8 +37,8 @@ class BeersFragment : Fragment() {
         val buttonPrevious: Button = binding.buttonPrevious
         val viewFlipper: ViewFlipper = binding.viewFlipper
 
-        buttonNext.text = "->"
-        buttonPrevious.text = "<-"
+        buttonNext.text = ">>"
+        buttonPrevious.text = "<<"
 
         //function to set beer values ( title, description, font color, background color )
         fun setBeer(

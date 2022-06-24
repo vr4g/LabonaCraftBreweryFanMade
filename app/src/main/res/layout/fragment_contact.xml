@@ -7,6 +7,7 @@
     android:background="#292828"
     tools:context=".ui.contact.ContactFragment">
 
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="0dp"
@@ -43,6 +44,7 @@
         android:id="@+id/addressTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="TextView"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +125,7 @@
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:background="?android:attr/listDivider"
         android:backgroundTint="#FFFFFF"

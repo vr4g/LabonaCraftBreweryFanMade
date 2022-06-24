@@ -13,8 +13,9 @@
         android:id="@+id/buttonPrevious"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#40FFFFFF"
-        android:backgroundTint="#00000000"
+        android:background="#000000"
+        android:backgroundTint="#00FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/viewFlipper"
         app:layout_constraintHeight_percent="0.07"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,11 +38,12 @@
     <TextView
         android:id="@+id/beerTitle"
         android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
-        android:textSize="26sp"
+        android:textAlignment="textStart"
+        android:textSize="30sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewFlipper"
@@ -51,10 +53,12 @@
         android:id="@+id/beerDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="32dp"
+        android:letterSpacing="0.05"
         android:text="TextView"
+        app:autoSizeMinTextSize="16sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,6 +134,20 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:src="@drawable/blonde" />
+
     </ViewFlipper>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="?android:attr/listDivider"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/beerDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beerTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
